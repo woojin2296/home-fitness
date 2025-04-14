@@ -44,6 +44,10 @@ const data = {
           url: "/dev/pose/pose-visualization",
         },
         {
+          title: "Pose Recoder",
+          url: "/dev/pose/pose-recoder",
+        },
+        {
           title: "Pose Classification",
           url: "/dev/pose/pose-classification",
         },

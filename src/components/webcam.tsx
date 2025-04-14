@@ -37,8 +37,7 @@ const BlazePoseComponent = () => {
   const detectorRef = useRef<poseDetection.PoseDetector | null>(null);
 
   const [poseMarker, setPoseMarker] = useState<Pose | null>(null);
-
-  useEffect(() => {
+useEffect(() => {
     const detectPose = async () => {
       if (
         detectorRef.current &&
@@ -93,6 +92,7 @@ const BlazePoseComponent = () => {
 
     detectPose();
   }, []);
+  
 
   const loadWebCam = async () => {
     if (videoRef.current) {
